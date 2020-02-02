@@ -1,15 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Bebas+Neue');
-
-img {
-  border-radius: 50%;
-  -webkit-transition: -webkit-transform .8s ease-in-out;
-          transition:         transform .8s ease-in-out;
-}
-img:hover {
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
-}
-
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -17,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(99, 240, 174);
 }
 
 code {
@@ -24,6 +13,31 @@ code {
     monospace;
 }
 
-body {
-  font-family: "Bebas Neue", regular;
+.toilet {
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+          transition:         transform .8s ease-in-out;
+ }
+ .toilet:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+ }
+ 
+#title {
+  text-align: center;
+}
+
+.map { 
+  text-align: center;
+  vertical-align: middle;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative; 
+  z-index: 0;
+} 
+
+.toilet {
+  position: absolute; 
+  left: 25%;
+  top: 45%;
+  z-index: 1;
 }
